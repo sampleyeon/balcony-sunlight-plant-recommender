@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+cache/
+.env
+*.zip
+
+# 대용량 원본 (저장소에 올리지 않음, README의 '포함하지 않은 자료' 참고)
+*.tif
+*.tiff
+*.gpkg
+*.shp
+*.npy
