@@ -1,0 +1,406 @@
+<title>식집사 앱 기획안</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: 한 칼럼 문서 + 가로로 이어지는 폰 화면 흐름. 잎(초록)은 식물, 호박색은 햇빛. */
+:root{
+  --bg:#f3f6f2; --surface:#ffffff; --ink:#1d2a22; --muted:#5d6b62; --line:#d6dfd8;
+  --leaf:#2f7a4f; --leaf-soft:#e2efe6; --sun:#d98a12; --sun-soft:#fbf0dc;
+  --warn:#b4472f; --warn-soft:#f8e4de; --hold:#6a6f86; --hold-soft:#e8e9f0;
+  --phone:#ffffff; --phone-edge:#c9d3cc; --screen-bg:#f7faf7;
+  --f-display:"Gowun Batang","Noto Serif KR",serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121915; --surface:#1a231e; --ink:#e4ece6; --muted:#9aa89f; --line:#2c3a31;
+  --leaf:#6cc490; --leaf-soft:#1f3328; --sun:#f0aa3c; --sun-soft:#3a2d16;
+  --warn:#ee8a72; --warn-soft:#3d221c; --hold:#a8acc4; --hold-soft:#262838;
+  --phone:#1e2722; --phone-edge:#34433a; --screen-bg:#151d18; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121915; --surface:#1a231e; --ink:#e4ece6; --muted:#9aa89f; --line:#2c3a31;
+  --leaf:#6cc490; --leaf-soft:#1f3328; --sun:#f0aa3c; --sun-soft:#3a2d16;
+  --warn:#ee8a72; --warn-soft:#3d221c; --hold:#a8acc4; --hold-soft:#262838;
+  --phone:#1e2722; --phone-edge:#34433a; --screen-bg:#151d18; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.65}
+.wrap{max-width:1040px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.3}
+h1{font-size:clamp(28px,5vw,40px)}
+h2{font-size:24px}
+h3{font-size:17px}
+p{margin:0}
+.eyebrow{font-size:12px;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.lede{font-size:17px;max-width:62ch;color:var(--ink)}
+.sec{display:flex;flex-direction:column;gap:18px}
+.sec>p{max-width:68ch;color:var(--muted)}
+.thesis{display:flex;flex-wrap:wrap;gap:10px}
+.thesis span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px}
+.thesis b{color:var(--leaf)}
+
+/* 판정 3단 */
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.tiers{grid-template-columns:1fr}}
+.tier{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.tier h3{display:flex;align-items:center;gap:8px}
+.tier ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.tier li small{display:block;color:var(--muted);font-size:13px;line-height:1.5}
+.tier.mvp{border-top:4px solid var(--leaf)}
+.tier.next{border-top:4px solid var(--sun)}
+.tier.hold{border-top:4px solid var(--hold)}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.p-in{background:var(--leaf-soft);color:var(--leaf)}
+.p-next{background:var(--sun-soft);color:var(--sun)}
+.p-hold{background:var(--hold-soft);color:var(--hold)}
+
+/* 표 */
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.04em}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+td .alt{display:block;margin-top:6px;color:var(--leaf);font-size:13px}
+
+/* 폰 흐름 */
+.flow{overflow-x:auto;padding:4px 2px 18px;margin:0 -2px}
+.flow-row{display:flex;gap:22px;width:max-content}
+.step{width:258px;display:flex;flex-direction:column;gap:10px}
+.step-cap{font-size:13px;color:var(--muted);min-height:58px}
+.step-cap b{display:block;color:var(--ink);font-size:15px;font-family:var(--f-display)}
+.phone{background:var(--phone);border:1.5px solid var(--phone-edge);border-radius:30px;padding:10px;box-shadow:0 10px 24px -16px rgba(20,40,28,.45)}
+.screen{background:var(--screen-bg);border-radius:22px;height:500px;overflow:hidden;display:flex;flex-direction:column;font-size:12px;line-height:1.5}
+.bar{display:flex;justify-content:space-between;padding:8px 14px 4px;font-family:var(--f-mono);font-size:10px;color:var(--muted)}
+.appbar{padding:4px 14px 10px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px}
+.appbar .back{color:var(--muted);font-weight:400}
+.body{padding:0 12px 12px;display:flex;flex-direction:column;gap:9px;flex:1;min-height:0}
+.field{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.field label{display:block;font-size:10px;color:var(--muted)}
+.field .v{font-weight:600}
+.opt{display:flex;flex-direction:column;gap:5px}
+.opt div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 9px;display:flex;justify-content:space-between}
+.opt div.sel{border-color:var(--leaf);background:var(--leaf-soft)}
+.btn{margin-top:auto;background:var(--leaf);color:var(--surface);text-align:center;border-radius:10px;padding:10px;font-weight:700}
+.hint{color:var(--muted);font-size:10.5px}
+.stepper{display:flex;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px}
+.stepper .n{font-size:20px;font-weight:700;font-family:var(--f-mono)}
+.stepper .pm{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted)}
+.compass{position:relative;width:170px;height:170px;margin:2px auto;border-radius:50%;border:1px solid var(--line);background:var(--surface)}
+.compass span{position:absolute;width:34px;height:22px;margin:-11px 0 0 -17px;display:grid;place-items:center;font-size:11px;border-radius:6px;color:var(--muted)}
+.compass span.sel{background:var(--leaf);color:var(--surface);font-weight:700}
+.compass .c{left:50%;top:50%;width:auto;height:auto;margin:0;transform:translate(-50%,-50%);font-size:10px;text-align:center}
+.grade{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.grade .big{font-family:var(--f-mono);font-size:22px;font-weight:500;color:var(--sun)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:5px}
+.card-t{font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+.tl{display:grid;grid-template-columns:repeat(26,1fr);height:14px;border-radius:4px;overflow:hidden;background:var(--line)}
+.tl i{display:block}
+.tl .on{background:var(--sun)}
+.tl .sh{background:var(--hold-soft)}
+.tl-ax{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:9px;color:var(--muted)}
+.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:3px}
+.tabs span{flex:1;text-align:center;padding:4px;border-radius:6px;font-size:11px;color:var(--muted)}
+.tabs span.on{background:var(--leaf-soft);color:var(--leaf);font-weight:700}
+.rec{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px;display:grid;grid-template-columns:22px 1fr auto;gap:2px 8px;align-items:center}
+.rec .rk{font-family:var(--f-mono);color:var(--muted);grid-row:span 2}
+.rec .nm{font-weight:700;font-size:13px}
+.rec .sc{font-family:var(--f-mono);font-size:15px;font-weight:500;grid-row:span 2;text-align:right}
+.rec .why{font-size:10.5px;color:var(--muted)}
+.rec.top{border-color:var(--leaf)}
+.rec.top .sc{color:var(--leaf)}
+.chip{display:inline-block;font-size:9.5px;padding:0 6px;border-radius:999px;margin-right:3px}
+.chip.ok{background:var(--leaf-soft);color:var(--leaf)}
+.chip.lack{background:var(--warn-soft);color:var(--warn)}
+.meter{display:grid;grid-template-columns:34px 1fr 30px;gap:6px;align-items:center;font-size:10.5px}
+.meter .track{height:7px;background:var(--line);border-radius:4px;overflow:hidden}
+.meter .fill{height:100%;background:var(--leaf)}
+.meter .num{font-family:var(--f-mono);text-align:right}
+.cal{display:grid;grid-template-columns:repeat(12,1fr);gap:2px}
+.cal i{height:16px;border-radius:3px;background:var(--line);font-style:normal;font-size:8.5px;display:grid;place-items:center;color:var(--muted)}
+.cal i.g{background:var(--leaf-soft);color:var(--leaf)}
+.cal i.now{background:var(--leaf);color:var(--surface);font-weight:700}
+.llm{background:var(--sun-soft);border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:3px}
+.llm .tag{font-size:9.5px;color:var(--sun);font-weight:700;letter-spacing:.04em}
+.src{font-size:9.5px;color:var(--muted)}
+.note-ex{font-size:12px;color:var(--muted)}
+
+/* 원칙 */
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:700px){.rules{grid-template-columns:1fr}}
+.rule{border-left:3px solid var(--leaf);padding:2px 0 2px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.rule p{color:var(--muted);font-size:14px}
+
+/* 일정 */
+.plan{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.plan div{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.plan div:last-child{border-bottom:0}
+.plan b{font-family:var(--f-mono);font-weight:500;font-size:13px;color:var(--leaf)}
+@media (max-width:560px){.plan div{grid-template-columns:1fr;gap:2px}}
+.arch{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;overflow-x:auto}
+</style>
+
+<div class="wrap">
+
+<header class="sec">
+  <span class="eyebrow">식집사 · 서비스 기획 · 2026년 11월 3일</span>
+  <h1>식집사 앱, 무엇을 넣고 어떻게 보여줄까</h1>
+  <p class="lede">결론부터 말하면 MVP는 <b>주소 입력 → 우리 창 햇빛 리포트 → 이번 달 추천 → 식물 상세(점수 근거 + LLM 설명)</b> 네 화면이면 충분합니다. 광환경 그래프와 LLM 이유는 넣고, 사진 평가와 조도계 측정은 이번 학기에는 보류하는 것을 추천합니다.</p>
+  <div class="thesis">
+    <span>입력은 <b>3가지</b> (주소·층·창 방향)</span>
+    <span>점수는 <b>엔진</b>이 정하고</span>
+    <span>설명은 <b>LLM</b>이 풀어 쓰고</span>
+    <span>모든 숫자 옆에 <b>근거</b></span>
+  </div>
+</header>
+
+<section class="sec">
+  <h2>넣을 것, 다음 단계, 보류</h2>
+  <div class="tiers">
+    <div class="tier mvp">
+      <h3><span class="pill p-in">MVP</span> 이번 학기에 만들 것</h3>
+      <ul>
+        <li>주소·동·층·창 방향 입력<small>window_sun 입력과 그대로 맞물립니다.</small></li>
+        <li>우리 창 햇빛 리포트<small>월별 직사광(direct_h) 막대 + 하루 중 햇빛 드는 시간대 띠.</small></li>
+        <li>이번 달 추천 Top 3<small>점수와 가장 부족한 조건을 한 줄로.</small></li>
+        <li>식물 상세: 점수 분해 + 재배 캘린더<small>일조·온도 점수, 12개월 중 시작 가능 달.</small></li>
+        <li>LLM '왜 추천?' + 키우는 법<small>RCCF 프롬프트, 결과는 바꾸지 않음.</small></li>
+      </ul>
+    </div>
+    <div class="tier next">
+      <h3><span class="pill p-next">다음</span> 시간 남으면</h3>
+      <ul>
+        <li>실내식물 10종 조도 추천<small>측정이 아니라 계산한 lux로. 추천 화면에 탭 하나 추가.</small></li>
+        <li>다른 층·다른 창과 비교<small>"거실 남향 vs 방 서향" 같은 비교. 계산만 한 번 더 돌리면 됩니다.</small></li>
+        <li>내 식물 등록과 시작 알림<small>앱다운 기능이지만 데모·평가에는 영향이 적습니다.</small></li>
+      </ul>
+    </div>
+    <div class="tier hold">
+      <h3><span class="pill p-hold">보류</span> 이번엔 빼기</h3>
+      <ul>
+        <li>사진으로 공간 환경 평가<small>사진 밝기는 빛의 양을 말해 주지 않습니다. 줄여서 '입력 보조'로만 가능.</small></li>
+        <li>조도계·광도 실측<small>iOS·웹에서 센서 접근 불가, 한 번 잰 값은 월 단위 추천과 맞지 않음.</small></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>후보 기능별 판단</h2>
+  <p>서연 님이 말한 다섯 가지를 기준으로, 우리 시스템의 원칙(엔진이 결정, LLM은 설명, 평가는 계산값과 AI 심사로)과 맞는지 봤습니다.</p>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>기능</th><th>판단</th><th>이유</th><th>만든다면 이렇게</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>식물 추천 화면</td><td><span class="pill p-in">MVP 핵심</span></td>
+          <td>서비스의 결과물 그 자체. 엔진 출력(순위·점수·시작 월)이 이미 있습니다.</td>
+          <td>Top 3 카드에 점수와 "햇빛 부족" 같은 제한 조건 칩. 동점은 같은 순위로 묶어 표시.</td>
+        </tr>
+        <tr>
+          <td>광환경 수치 그래프</td><td><span class="pill p-in">MVP</span></td>
+          <td>Patch Plants처럼 사용자가 '그늘/양지'를 고르지 않아도 된다는 차별점을 눈으로 보여 주는 화면입니다. 데이터도 이미 계산됨.</td>
+          <td>월별 direct_h 막대 1개 + 대표일 10분 단위 햇빛 띠 1개. 그래프는 두 개를 넘기지 않기.</td>
+        </tr>
+        <tr>
+          <td>LLM 추천 이유</td><td><span class="pill p-in">MVP</span></td>
+          <td>RCCF 프롬프트가 준비돼 있고, AI 평가단이 채점할 대상이기도 합니다.</td>
+          <td>식물 상세 화면의 '왜 추천?' 칸. 숫자 카드 아래에 두고 "AI 설명" 표시. 생성 후 작물·순위·월이 엔진과 같은지 코드로 확인.</td>
+        </tr>
+        <tr>
+          <td>사진으로 공간 평가 (멀티모달)</td><td><span class="pill p-hold">보류</span></td>
+          <td>카메라 자동 노출 때문에 사진 밝기와 실제 빛의 양이 따로 놉니다. LLM이 환경을 '판정'하면 엔진 결과와 충돌하고, 같은 사진에도 답이 달라져 평가 재현성이 깨집니다.</td>
+          <td>하려면 판정이 아닌 입력 보조로 좁히기: 사진에서 블라인드·방충망·확장형 베란다 여부를 뽑아 사용자가 확인하면 투과율 보정에만 반영.<span class="alt">→ 실내식물 lux 계산이 생긴 뒤에야 의미가 있어 '다음 단계' 이후</span></td>
+        </tr>
+        <tr>
+          <td>조도계 / 광도 측정</td><td><span class="pill p-hold">보류</span></td>
+          <td>iPhone은 조도 센서를 앱에 열어 주지 않고, Gradio 같은 웹 데모에서는 안드로이드도 접근이 안 됩니다. 한 순간 값이라 '이 달 하루 직사광'과 바로 비교하기 어렵고, 프로젝트 제약(실측 불가)과도 맞지 않습니다.</td>
+          <td>나중에 네이티브 앱이 된다면 안드로이드 한정 "지금 밝기 재 보기"로 계산 조도와 나란히 보여 주는 확인용 기능.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>화면 흐름</h2>
+  <p>사용자 C(길음뉴타운8단지래미안 805동, 1층 남향)의 8월 결과로 그렸습니다. 8월 직사광 4.17시간, 레몬밤 100점, 딸기·바질·고추 69.5점은 발표 자료의 실제 값이고, 시간대 띠와 8·10월 외 월별 막대 높이는 화면 예시입니다.</p>
+  <div class="flow" tabindex="0" aria-label="화면 흐름, 가로로 스크롤">
+    <div class="flow-row">
+
+      <!-- 1 -->
+      <div class="step">
+        <div class="step-cap"><b>① 우리 집 찾기</b>도로명주소 검색 후 동을 고릅니다. 신축 단지도 전자지도로 찾습니다.</div>
+        <div class="phone"><div class="screen">
+          <div class="bar"><span>9:41</span><span>식집사</span></div>
+          <div class="appbar">어디에서 키우시나요?</div>
+          <div class="body">
+            <div class="field"><label>주소</label><span class="v">길음로 33</span></div>
+            <span class="hint">길음뉴타운8단지래미안 · 동을 골라 주세요</span>
+            <div class="opt">
+              <div><span>803동</span><span class="hint">15층</span></div>
+              <div><span>804동</span><span class="hint">15층</span></div>
+              <div class="sel"><span><b>805동</b></span><span class="hint">15층</span></div>
+              <div><span>806동</span><span class="hint">12층</span></div>
+            </div>
+            <span class="hint">목록에 없으면 지도에서 건물을 눌러 주세요.</span>
+            <div class="btn">다음</div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 2 -->
+      <div class="step">
+        <div class="step-cap"><b>② 창 정보</b>층과 식물을 둘 창의 방향만. 나침반을 누르거나 휴대폰을 창에 대고 방향을 받아 옵니다.</div>
+        <div class="phone"><div class="screen">
+          <div class="bar"><span>9:41</span><span>2 / 3</span></div>
+          <div class="appbar"><span class="back">‹</span> 식물 둘 창은요?</div>
+          <div class="body">
+            <span class="hint">몇 층인가요?</span>
+            <div class="stepper"><span class="pm">−</span><span class="n">1층</span><span class="pm">+</span></div>
+            <span class="hint">창이 바라보는 방향</span>
+            <div class="compass">
+              <span style="left:50%;top:10%">북</span>
+              <span style="left:79%;top:21%">북동</span>
+              <span style="left:90%;top:50%">동</span>
+              <span style="left:79%;top:79%">남동</span>
+              <span class="sel" style="left:50%;top:90%">남</span>
+              <span style="left:21%;top:79%">남서</span>
+              <span style="left:10%;top:50%">서</span>
+              <span style="left:21%;top:21%">북서</span>
+              <span class="c">창 밖을<br>보는 방향</span>
+            </div>
+            <div class="btn">우리 창 햇빛 계산하기</div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="step">
+        <div class="step-cap"><b>③ 우리 창 햇빛</b>계산 결과를 먼저 보여 줍니다. 등급, 월별 막대, 오늘 몇 시에 해가 드는지.</div>
+        <div class="phone"><div class="screen">
+          <div class="bar"><span>9:41</span><span>805동 1층 남향</span></div>
+          <div class="appbar"><span class="back">‹</span> 우리 창 햇빛</div>
+          <div class="body">
+            <div class="grade"><span class="big">4.17h</span><span>8월 하루 직사광<br><span class="pill p-next">보통 이하</span></span></div>
+            <div class="card">
+              <div class="card-t"><span>월별 하루 직사광 (시간)</span><span>매월 21일</span></div>
+              <svg viewBox="0 0 220 86" width="100%" role="img" aria-label="월별 직사광 막대 그래프">
+                <g fill="var(--line)">
+                  <rect x="4" y="66" width="14" height="10"/><rect x="22" y="62" width="14" height="14"/><rect x="40" y="54" width="14" height="22"/><rect x="58" y="44" width="14" height="32"/><rect x="76" y="40" width="14" height="36"/><rect x="94" y="38" width="14" height="38"/><rect x="112" y="40" width="14" height="36"/>
+                  <rect x="148" y="52" width="14" height="24"/><rect x="166" y="66" width="14" height="10"/><rect x="184" y="68" width="14" height="8"/><rect x="202" y="70" width="14" height="6"/>
+                </g>
+                <rect x="130" y="42" width="14" height="34" fill="var(--sun)"/>
+                <text x="137" y="38" font-size="8" text-anchor="middle" fill="var(--ink)">4.17</text>
+                <text x="173" y="60" font-size="7" text-anchor="middle" fill="var(--muted)">1.17</text>
+                <g font-size="7" fill="var(--muted)" text-anchor="middle"><text x="11" y="85">1</text><text x="65" y="85">4</text><text x="137" y="85">8</text><text x="209" y="85">12월</text></g>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card-t"><span>8월 21일, 햇빛 드는 시간</span><span>예시</span></div>
+              <div class="tl">
+                <i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i>
+                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
+                <i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i><i class="sh"></i>
+              </div>
+              <div class="tl-ax"><span>06시</span><span>10:20 ~ 14:30</span><span>19시</span></div>
+              <span class="hint">그 밖의 시간은 앞 동에 가려지거나 해가 창 뒤쪽에 있어요.</span>
+            </div>
+            <div class="btn">이번 달 키울 식물 보기</div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 4 -->
+      <div class="step">
+        <div class="step-cap"><b>④ 이번 달 추천</b>Top 3와 각 식물의 제한 조건. 재배 철이 아닌 식물은 처음부터 빠져 있습니다.</div>
+        <div class="phone"><div class="screen">
+          <div class="bar"><span>9:41</span><span>2026년 8월</span></div>
+          <div class="appbar"><span class="back">‹</span> 지금 키우기 좋은 식물</div>
+          <div class="body">
+            <div class="tabs"><span class="on">채소·허브 20종</span><span>실내식물 (준비 중)</span></div>
+            <div class="rec top"><span class="rk">1</span><span class="nm">레몬밤</span><span class="sc">100</span><span class="why"><span class="chip ok">햇빛 충분</span><span class="chip ok">온도 적합</span></span></div>
+            <div class="rec"><span class="rk">2</span><span class="nm">딸기</span><span class="sc">69.5</span><span class="why"><span class="chip lack">햇빛 부족</span>6시간 필요</span></div>
+            <div class="rec"><span class="rk">2</span><span class="nm">바질</span><span class="sc">69.5</span><span class="why"><span class="chip lack">햇빛 부족</span>6시간 필요</span></div>
+            <div class="rec"><span class="rk">2</span><span class="nm">고추</span><span class="sc">69.5</span><span class="why"><span class="chip lack">햇빛 부족</span>6시간 필요</span></div>
+            <span class="hint">점수 = 일조 점수와 온도 점수 중 낮은 쪽. 동점은 같은 순위예요.</span>
+            <div class="btn" style="background:var(--surface);color:var(--leaf);border:1px solid var(--leaf)">다른 달 시작하면?</div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 5 -->
+      <div class="step">
+        <div class="step-cap"><b>⑤ 식물 상세</b>숫자 근거가 위, AI 설명이 아래. 키우는 법은 농사로 재배 정보표에서만.</div>
+        <div class="phone"><div class="screen">
+          <div class="bar"><span>9:41</span><span>레몬밤</span></div>
+          <div class="appbar"><span class="back">‹</span> 레몬밤 <span class="pill p-in">100점</span></div>
+          <div class="body">
+            <div class="card">
+              <div class="card-t"><span>점수 근거</span><span>낮은 쪽이 최종</span></div>
+              <div class="meter"><span>일조</span><span class="track"><span class="fill" style="width:100%;display:block"></span></span><span class="num">100</span></div>
+              <span class="hint">필요 3시간 · 우리 창 4.17시간</span>
+              <div class="meter"><span>온도</span><span class="track"><span class="fill" style="width:100%;display:block"></span></span><span class="num">100</span></div>
+              <span class="hint">적정 15~30℃ · 8월 21일 시간별 기온 기준</span>
+            </div>
+            <div class="card">
+              <div class="card-t"><span>시작하기 좋은 달</span><span>예시</span></div>
+              <div class="cal"><i>1</i><i>2</i><i class="g">3</i><i class="g">4</i><i class="g">5</i><i class="g">6</i><i class="g">7</i><i class="now">8</i><i class="g">9</i><i class="g">10</i><i>11</i><i>12</i></div>
+            </div>
+            <div class="llm">
+              <span class="tag">AI 설명 · 왜 추천했나요?</span>
+              <span>이 창은 8월에 하루 4시간 정도 해가 들어요. 레몬밤은 3시간이면 충분해서 빛이 적은 1층 창에서도 잘 자라요.</span>
+            </div>
+            <div class="card">
+              <div class="card-t"><span>키우는 법</span><span>준비 → 심기 → 관리 → 수확</span></div>
+              <span class="hint">펼쳐서 보기 ▾</span>
+            </div>
+            <span class="src">출처: 농사로 작물 재배 정보 · 기상청 ASOS 서울(108)</span>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+  <p class="note-ex">가로로 밀어서 다섯 화면을 이어 볼 수 있어요.</p>
+</section>
+
+<section class="sec">
+  <h2>화면을 만들 때 지킬 원칙</h2>
+  <div class="rules">
+    <div class="rule"><h3>입력은 세 번에 끝내기</h3><p>주소, 층, 창 방향 외에는 묻지 않습니다. 빛 조건을 사용자가 고르게 하는 순간 Patch Plants와 같아집니다.</p></div>
+    <div class="rule"><h3>점수보다 '부족한 것'을 말로</h3><p>69.5라는 숫자보다 "햇빛 부족, 6시간 필요"가 먼저 읽히게. 엔진이 최솟값을 쓰니 제한 조건이 곧 설명입니다.</p></div>
+    <div class="rule"><h3>숫자는 엔진, 문장은 LLM</h3><p>AI 설명 칸은 숫자 카드 아래에 따로 두고 라벨을 붙입니다. 설명이 틀려도 숫자는 그대로라는 게 화면에서 보여야 AI 평가단 채점과도 맞습니다.</p></div>
+    <div class="rule"><h3>근거를 항상 옆에</h3><p>"매월 21일 계산", "ASOS 서울", "농사로" 같은 출처를 작게라도 붙여 둡니다. R2 근거 정확성 항목을 화면이 직접 보여 줍니다.</p></div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>어떻게 구현할까</h2>
+  <p>'앱'은 이 와이어프레임으로 보고서와 발표에서 보여 주고, 실제로 돌아가는 데모는 계획대로 Hugging Face Spaces의 Gradio로 만드는 것을 추천합니다. Gradio Blocks로 위 흐름을 거의 그대로 옮길 수 있습니다.</p>
+  <div class="arch">
+<pre class="mermaid">
+flowchart LR
+  A["① 주소·동 선택<br/>gr.Textbox + gr.Dropdown"] --> B["② 층·창 방향<br/>gr.Slider + gr.Radio"]
+  B --> C["window_sun 계산<br/>(성북구 DSM, 결과 캐시)"]
+  C --> D["③ 햇빛 리포트<br/>gr.BarPlot"]
+  C --> E["추천 엔진<br/>min(일조, 온도) + 재배 철 필터"]
+  E --> F["④ Top 3 표<br/>gr.Dataframe"]
+  E --> G["RCCF 프롬프트 → LLM"]
+  G --> H["⑤ 상세·AI 설명<br/>gr.Markdown"]
+</pre>
+  </div>
+  <p>주의할 점 두 가지: 전국 주소를 받으려면 주소마다 DSM을 새로 만들어야 해서 데모는 성북구로 범위를 밝혀 두는 게 안전하고, 같은 주소·층·방향 결과는 저장해 두었다가 다시 쓰면 응답이 빨라집니다.</p>
+</section>
+
+<section class="sec">
+  <h2>12월 14일까지 일정 제안</h2>
+  <div class="plan">
+    <div><b>11/4 ~ 11/16</b><span>MVP 화면 ①~④를 Gradio로. 계산은 A·B·C 결과를 먼저 붙이고 주소 입력은 이후 연결.</span></div>
+    <div><b>11/17 ~ 11/30</b><span>⑤ 식물 상세 + RCCF LLM 연결, 엔진 결과와 대조하는 검사 코드. 재배 정보표 완성.</span></div>
+    <div><b>12/1 ~ 12/7</b><span>AI 평가단으로 화면 출력물 채점. 여유가 있으면 실내식물 lux 탭.</span></div>
+    <div><b>12/8 ~ 12/14</b><span>화면 캡처를 보고서·포스터에 넣고, 이 와이어프레임을 '앱 확장 구상'으로 소개.</span></div>
+  </div>
+</section>
+
+</div>
