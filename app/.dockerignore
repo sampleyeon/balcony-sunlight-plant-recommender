@@ -1,0 +1,7 @@
+cache/
+__pycache__/
+tools/
+tests/
+examples/
+*.md
+!README.md

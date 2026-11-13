@@ -1,0 +1,5834 @@
+{
+ "input": {
+  "scenario": "C",
+  "label": "길음동 길음뉴타운8단지래미안 805동 1층 남향"
+ },
+ "building": null,
+ "obstruction_deg": null,
+ "sun_monthly": [
+  {
+   "month": "2025-10",
+   "sun_up_h": 10.83,
+   "facing_h": 10.83,
+   "direct_h": 1.17,
+   "grade": "low"
+  },
+  {
+   "month": "2025-11",
+   "sun_up_h": 9.83,
+   "facing_h": 9.83,
+   "direct_h": 0.83,
+   "grade": "low"
+  },
+  {
+   "month": "2025-12",
+   "sun_up_h": 9.33,
+   "facing_h": 9.33,
+   "direct_h": 0.5,
+   "grade": "low"
+  },
+  {
+   "month": "2026-01",
+   "sun_up_h": 9.83,
+   "facing_h": 9.83,
+   "direct_h": 1.0,
+   "grade": "low"
+  },
+  {
+   "month": "2026-02",
+   "sun_up_h": 10.83,
+   "facing_h": 10.83,
+   "direct_h": 1.17,
+   "grade": "low"
+  },
+  {
+   "month": "2026-03",
+   "sun_up_h": 12.0,
+   "facing_h": 12.0,
+   "direct_h": 3.0,
+   "grade": "medium"
+  },
+  {
+   "month": "2026-04",
+   "sun_up_h": 13.33,
+   "facing_h": 10.0,
+   "direct_h": 3.5,
+   "grade": "medium"
+  },
+  {
+   "month": "2026-05",
+   "sun_up_h": 14.17,
+   "facing_h": 8.17,
+   "direct_h": 4.83,
+   "grade": "medium"
+  },
+  {
+   "month": "2026-06",
+   "sun_up_h": 14.5,
+   "facing_h": 7.5,
+   "direct_h": 4.83,
+   "grade": "medium"
+  },
+  {
+   "month": "2026-07",
+   "sun_up_h": 14.33,
+   "facing_h": 8.17,
+   "direct_h": 4.83,
+   "grade": "medium"
+  },
+  {
+   "month": "2026-08",
+   "sun_up_h": 13.17,
+   "facing_h": 9.83,
+   "direct_h": 3.5,
+   "grade": "medium"
+  },
+  {
+   "month": "2026-09",
+   "sun_up_h": 12.17,
+   "facing_h": 11.83,
+   "direct_h": 3.17,
+   "grade": "medium"
+  }
+ ],
+ "lux_monthly": [
+  {
+   "month": "2025-10",
+   "position": "1m",
+   "lux_mean": 2278,
+   "lux_noon": 2705,
+   "dli": 1.64
+  },
+  {
+   "month": "2025-11",
+   "position": "1m",
+   "lux_mean": 2509,
+   "lux_noon": 1126,
+   "dli": 1.64
+  },
+  {
+   "month": "2025-12",
+   "position": "1m",
+   "lux_mean": 1478,
+   "lux_noon": 953,
+   "dli": 0.92
+  },
+  {
+   "month": "2026-01",
+   "position": "1m",
+   "lux_mean": 2973,
+   "lux_noon": 1133,
+   "dli": 1.95
+  },
+  {
+   "month": "2026-02",
+   "position": "1m",
+   "lux_mean": 3584,
+   "lux_noon": 5272,
+   "dli": 2.59
+  },
+  {
+   "month": "2026-03",
+   "position": "1m",
+   "lux_mean": 5789,
+   "lux_noon": 19355,
+   "dli": 4.63
+  },
+  {
+   "month": "2026-04",
+   "position": "1m",
+   "lux_mean": 3065,
+   "lux_noon": 8924,
+   "dli": 2.72
+  },
+  {
+   "month": "2026-05",
+   "position": "1m",
+   "lux_mean": 1190,
+   "lux_noon": 2122,
+   "dli": 1.12
+  },
+  {
+   "month": "2026-06",
+   "position": "1m",
+   "lux_mean": 1313,
+   "lux_noon": 2165,
+   "dli": 1.27
+  },
+  {
+   "month": "2026-07",
+   "position": "1m",
+   "lux_mean": 1124,
+   "lux_noon": 1904,
+   "dli": 1.07
+  },
+  {
+   "month": "2026-08",
+   "position": "1m",
+   "lux_mean": 2128,
+   "lux_noon": 5766,
+   "dli": 1.87
+  },
+  {
+   "month": "2026-09",
+   "position": "1m",
+   "lux_mean": 6553,
+   "lux_noon": 23469,
+   "dli": 5.31
+  }
+ ],
+ "months": [
+  {
+   "month": "2025-10",
+   "month_num": 10,
+   "season": "fall",
+   "direct_h": 1.2,
+   "sun_up_h": 10.8,
+   "sun_grade": "low",
+   "lux_1m": 2278,
+   "dli_1m": 1.64,
+   "top3": {
+    "베란다작물": [],
+    "실내식물": [
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2278 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2278 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2278 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2278 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2278 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 30,
+      "plant_ko": "골드크레스트 '윌마'",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2278 lx / 필요 1500 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "추천할 작물이 없습니다 (제철이고 50점 이상인 작물 없음)",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2025-11",
+   "month_num": 11,
+   "season": "fall",
+   "direct_h": 0.8,
+   "sun_up_h": 9.8,
+   "sun_grade": "low",
+   "lux_1m": 2509,
+   "dli_1m": 1.64,
+   "top3": {
+    "베란다작물": [],
+    "실내식물": [
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2509 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2509 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2509 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2509 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2509 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 30,
+      "plant_ko": "골드크레스트 '윌마'",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2509 lx / 필요 1500 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "추천할 작물이 없습니다 (제철이고 50점 이상인 작물 없음)",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2025-12",
+   "month_num": 12,
+   "season": "winter",
+   "direct_h": 0.5,
+   "sun_up_h": 9.3,
+   "sun_grade": "low",
+   "lux_1m": 1478,
+   "dli_1m": 0.92,
+   "top3": {
+    "베란다작물": [],
+    "실내식물": [
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 1478 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 1478 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 1478 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 1478 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 1478 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "추천할 작물이 없습니다 (제철이고 50점 이상인 작물 없음)",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-01",
+   "month_num": 1,
+   "season": "winter",
+   "direct_h": 1.0,
+   "sun_up_h": 9.8,
+   "sun_grade": "low",
+   "lux_1m": 2973,
+   "dli_1m": 1.95,
+   "top3": {
+    "베란다작물": [],
+    "실내식물": [
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2973 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2973 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2973 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2973 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2973 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 30,
+      "plant_ko": "골드크레스트 '윌마'",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 2973 lx / 필요 1500 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "추천할 작물이 없습니다 (제철이고 50점 이상인 작물 없음)",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-02",
+   "month_num": 2,
+   "season": "winter",
+   "direct_h": 1.2,
+   "sun_up_h": 10.8,
+   "sun_grade": "low",
+   "lux_1m": 3584,
+   "dli_1m": 2.59,
+   "top3": {
+    "베란다작물": [],
+    "실내식물": [
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3584 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3584 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3584 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3584 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3584 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 30,
+      "plant_ko": "골드크레스트 '윌마'",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3584 lx / 필요 1500 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "추천할 작물이 없습니다 (제철이고 50점 이상인 작물 없음)",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-03",
+   "month_num": 3,
+   "season": "spring",
+   "direct_h": 3.0,
+   "sun_up_h": 12.0,
+   "sun_grade": "medium",
+   "lux_1m": 5789,
+   "dli_1m": 4.63,
+   "top3": {
+    "베란다작물": [
+     {
+      "plant_id": 4,
+      "plant_ko": "루꼴라",
+      "category": "vegetable",
+      "S_final": 50.4,
+      "S_light": 100.0,
+      "S_temp": 50.4,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "직사 3.00h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 9,
+      "plant_ko": "딸기",
+      "category": "fruiting_vegetable",
+      "S_final": 50.0,
+      "S_light": 50.0,
+      "S_temp": 71.7,
+      "grade": "보통",
+      "limit": "광",
+      "light_basis": "직사 3.00h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 16,
+      "plant_ko": "딜",
+      "category": "herb",
+      "S_final": 50.0,
+      "S_light": 50.0,
+      "S_temp": 80.4,
+      "grade": "보통",
+      "limit": "광",
+      "light_basis": "직사 3.00h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     }
+    ],
+    "실내식물": [
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 5789 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 5789 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 5789 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 5789 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 5789 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 30,
+      "plant_ko": "골드크레스트 '윌마'",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 5789 lx / 필요 1500 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-04",
+   "month_num": 4,
+   "season": "spring",
+   "direct_h": 3.5,
+   "sun_up_h": 13.3,
+   "sun_grade": "medium",
+   "lux_1m": 3065,
+   "dli_1m": 2.72,
+   "top3": {
+    "베란다작물": [
+     {
+      "plant_id": 4,
+      "plant_ko": "루꼴라",
+      "category": "vegetable",
+      "S_final": 85.3,
+      "S_light": 100.0,
+      "S_temp": 85.3,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "직사 3.50h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 20,
+      "plant_ko": "차이브",
+      "category": "herb",
+      "S_final": 60.2,
+      "S_light": 100.0,
+      "S_temp": 60.2,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "직사 3.50h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 9,
+      "plant_ko": "딸기",
+      "category": "fruiting_vegetable",
+      "S_final": 58.3,
+      "S_light": 58.3,
+      "S_temp": 100.0,
+      "grade": "보통",
+      "limit": "광",
+      "light_basis": "직사 3.50h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 16,
+      "plant_ko": "딜",
+      "category": "herb",
+      "S_final": 58.3,
+      "S_light": 58.3,
+      "S_temp": 100.0,
+      "grade": "보통",
+      "limit": "광",
+      "light_basis": "직사 3.50h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     }
+    ],
+    "실내식물": [
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3065 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3065 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3065 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3065 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3065 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 30,
+      "plant_ko": "골드크레스트 '윌마'",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 3065 lx / 필요 1500 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-05",
+   "month_num": 5,
+   "season": "spring",
+   "direct_h": 4.8,
+   "sun_up_h": 14.2,
+   "sun_grade": "medium",
+   "lux_1m": 1190,
+   "dli_1m": 1.12,
+   "top3": {
+    "베란다작물": [
+     {
+      "plant_id": 20,
+      "plant_ko": "차이브",
+      "category": "herb",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "직사 4.83h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 11,
+      "plant_ko": "민트",
+      "category": "herb",
+      "S_final": 98.7,
+      "S_light": 100.0,
+      "S_temp": 98.7,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "직사 4.83h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 12,
+      "plant_ko": "레몬밤",
+      "category": "herb",
+      "S_final": 98.7,
+      "S_light": 100.0,
+      "S_temp": 98.7,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "직사 4.83h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     }
+    ],
+    "실내식물": [
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "실내 1190 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 21,
+      "plant_ko": "금전수",
+      "category": "indoor_plant",
+      "S_final": 99.9,
+      "S_light": 100.0,
+      "S_temp": 99.9,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1190 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 24,
+      "plant_ko": "몬스테라",
+      "category": "indoor_plant",
+      "S_final": 99.9,
+      "S_light": 100.0,
+      "S_temp": 99.9,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1190 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 27,
+      "plant_ko": "아이비",
+      "category": "indoor_plant",
+      "S_final": 99.9,
+      "S_light": 100.0,
+      "S_temp": 99.9,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1190 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 29,
+      "plant_ko": "관음죽",
+      "category": "indoor_plant",
+      "S_final": 99.9,
+      "S_light": 100.0,
+      "S_temp": 99.9,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1190 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-06",
+   "month_num": 6,
+   "season": "summer",
+   "direct_h": 4.8,
+   "sun_up_h": 14.5,
+   "sun_grade": "medium",
+   "lux_1m": 1313,
+   "dli_1m": 1.27,
+   "top3": {
+    "베란다작물": [
+     {
+      "plant_id": 12,
+      "plant_ko": "레몬밤",
+      "category": "herb",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "직사 4.83h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 11,
+      "plant_ko": "민트",
+      "category": "herb",
+      "S_final": 87.8,
+      "S_light": 100.0,
+      "S_temp": 87.8,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "직사 4.83h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 6,
+      "plant_ko": "셀러리",
+      "category": "vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 87.3,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 7,
+      "plant_ko": "방울토마토",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 99.1,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 8,
+      "plant_ko": "고추",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 99.6,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 9,
+      "plant_ko": "딸기",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 10,
+      "plant_ko": "오이",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 87.3,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 14,
+      "plant_ko": "바질",
+      "category": "herb",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 93.9,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 16,
+      "plant_ko": "딜",
+      "category": "herb",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 94.7,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 19,
+      "plant_ko": "타임",
+      "category": "herb",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 87.8,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     }
+    ],
+    "실내식물": [
+     {
+      "plant_id": 22,
+      "plant_ko": "산세베리아",
+      "category": "indoor_plant",
+      "S_final": 81.7,
+      "S_light": 100.0,
+      "S_temp": 81.7,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1313 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 23,
+      "plant_ko": "스킨답서스",
+      "category": "indoor_plant",
+      "S_final": 81.7,
+      "S_light": 100.0,
+      "S_temp": 81.7,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1313 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 25,
+      "plant_ko": "해피트리",
+      "category": "indoor_plant",
+      "S_final": 81.7,
+      "S_light": 100.0,
+      "S_temp": 81.7,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1313 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 26,
+      "plant_ko": "벵갈고무나무",
+      "category": "indoor_plant",
+      "S_final": 81.7,
+      "S_light": 100.0,
+      "S_temp": 81.7,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1313 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-07",
+   "month_num": 7,
+   "season": "summer",
+   "direct_h": 4.8,
+   "sun_up_h": 14.3,
+   "sun_grade": "medium",
+   "lux_1m": 1124,
+   "dli_1m": 1.07,
+   "top3": {
+    "베란다작물": [
+     {
+      "plant_id": 12,
+      "plant_ko": "레몬밤",
+      "category": "herb",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "직사 4.83h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 11,
+      "plant_ko": "민트",
+      "category": "herb",
+      "S_final": 95.0,
+      "S_light": 100.0,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "직사 4.83h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 6,
+      "plant_ko": "셀러리",
+      "category": "vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 7,
+      "plant_ko": "방울토마토",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 8,
+      "plant_ko": "고추",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 9,
+      "plant_ko": "딸기",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 10,
+      "plant_ko": "오이",
+      "category": "fruiting_vegetable",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 14,
+      "plant_ko": "바질",
+      "category": "herb",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 16,
+      "plant_ko": "딜",
+      "category": "herb",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     },
+     {
+      "plant_id": 19,
+      "plant_ko": "타임",
+      "category": "herb",
+      "S_final": 80.5,
+      "S_light": 80.5,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "광",
+      "light_basis": "직사 4.83h / 필요 6h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     }
+    ],
+    "실내식물": [
+     {
+      "plant_id": 22,
+      "plant_ko": "산세베리아",
+      "category": "indoor_plant",
+      "S_final": 95.0,
+      "S_light": 100.0,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1124 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 23,
+      "plant_ko": "스킨답서스",
+      "category": "indoor_plant",
+      "S_final": 95.0,
+      "S_light": 100.0,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1124 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 25,
+      "plant_ko": "해피트리",
+      "category": "indoor_plant",
+      "S_final": 95.0,
+      "S_light": 100.0,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1124 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 26,
+      "plant_ko": "벵갈고무나무",
+      "category": "indoor_plant",
+      "S_final": 95.0,
+      "S_light": 100.0,
+      "S_temp": 95.0,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "실내 1124 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-08",
+   "month_num": 8,
+   "season": "summer",
+   "direct_h": 3.5,
+   "sun_up_h": 13.2,
+   "sun_grade": "medium",
+   "lux_1m": 2128,
+   "dli_1m": 1.87,
+   "top3": {
+    "베란다작물": [
+     {
+      "plant_id": 12,
+      "plant_ko": "레몬밤",
+      "category": "herb",
+      "S_final": 100.0,
+      "S_light": 100.0,
+      "S_temp": 100.0,
+      "grade": "적합",
+      "limit": "없음",
+      "light_basis": "직사 3.50h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 11,
+      "plant_ko": "민트",
+      "category": "herb",
+      "S_final": 78.8,
+      "S_light": 100.0,
+      "S_temp": 78.8,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "직사 3.50h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 20,
+      "plant_ko": "차이브",
+      "category": "herb",
+      "S_final": 59.3,
+      "S_light": 100.0,
+      "S_temp": 59.3,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "직사 3.50h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     }
+    ],
+    "실내식물": [
+     {
+      "plant_id": 22,
+      "plant_ko": "산세베리아",
+      "category": "indoor_plant",
+      "S_final": 78.8,
+      "S_light": 100.0,
+      "S_temp": 78.8,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 2128 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 23,
+      "plant_ko": "스킨답서스",
+      "category": "indoor_plant",
+      "S_final": 78.8,
+      "S_light": 100.0,
+      "S_temp": 78.8,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 2128 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 25,
+      "plant_ko": "해피트리",
+      "category": "indoor_plant",
+      "S_final": 78.8,
+      "S_light": 100.0,
+      "S_temp": 78.8,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 2128 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 26,
+      "plant_ko": "벵갈고무나무",
+      "category": "indoor_plant",
+      "S_final": 78.8,
+      "S_light": 100.0,
+      "S_temp": 78.8,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 2128 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "",
+    "실내식물": ""
+   }
+  },
+  {
+   "month": "2026-09",
+   "month_num": 9,
+   "season": "fall",
+   "direct_h": 3.2,
+   "sun_up_h": 12.2,
+   "sun_grade": "medium",
+   "lux_1m": 6553,
+   "dli_1m": 5.31,
+   "top3": {
+    "베란다작물": [
+     {
+      "plant_id": 12,
+      "plant_ko": "레몬밤",
+      "category": "herb",
+      "S_final": 99.3,
+      "S_light": 100.0,
+      "S_temp": 99.3,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "직사 3.17h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 15,
+      "plant_ko": "고수",
+      "category": "herb",
+      "S_final": 86.8,
+      "S_light": 100.0,
+      "S_temp": 86.8,
+      "grade": "적합",
+      "limit": "온도",
+      "light_basis": "직사 3.17h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 11,
+      "plant_ko": "민트",
+      "category": "herb",
+      "S_final": 73.8,
+      "S_light": 100.0,
+      "S_temp": 73.8,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "직사 3.17h / 필요 3h",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 3
+     }
+    ],
+    "실내식물": [
+     {
+      "plant_id": 28,
+      "plant_ko": "홍콩야자",
+      "category": "indoor_plant",
+      "S_final": 72.8,
+      "S_light": 100.0,
+      "S_temp": 72.8,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 6553 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 1
+     },
+     {
+      "plant_id": 22,
+      "plant_ko": "산세베리아",
+      "category": "indoor_plant",
+      "S_final": 70.1,
+      "S_light": 100.0,
+      "S_temp": 70.1,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 6553 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 23,
+      "plant_ko": "스킨답서스",
+      "category": "indoor_plant",
+      "S_final": 70.1,
+      "S_light": 100.0,
+      "S_temp": 70.1,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 6553 lx / 필요 300 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 25,
+      "plant_ko": "해피트리",
+      "category": "indoor_plant",
+      "S_final": 70.1,
+      "S_light": 100.0,
+      "S_temp": 70.1,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 6553 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     },
+     {
+      "plant_id": 26,
+      "plant_ko": "벵갈고무나무",
+      "category": "indoor_plant",
+      "S_final": 70.1,
+      "S_light": 100.0,
+      "S_temp": 70.1,
+      "grade": "보통",
+      "limit": "온도",
+      "light_basis": "실내 6553 lx / 필요 800 lx",
+      "in_season": true,
+      "recommendable": true,
+      "rank": 2
+     }
+    ]
+   },
+   "note": {
+    "베란다작물": "",
+    "실내식물": ""
+   }
+  }
+ ],
+ "plants": [
+  {
+   "plant_id": 1,
+   "plant_ko": "상추",
+   "group": "베란다작물",
+   "category": "vegetable",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 20.6,
+     "S_light": 39.0,
+     "S_temp": 20.6,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 7.8,
+     "S_light": 27.7,
+     "S_temp": 7.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 33.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 39.0,
+     "S_light": 39.0,
+     "S_temp": 42.4,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 25.8,
+     "S_light": 100.0,
+     "S_temp": 25.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 45.2,
+     "S_light": 100.0,
+     "S_temp": 45.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 98.6,
+     "S_light": 100.0,
+     "S_temp": 98.6,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 100.0,
+     "S_temp": 41.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 100.0,
+     "S_temp": 1.7,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 100.0,
+     "S_temp": 0.5,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 100.0,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 2,
+   "plant_ko": "대파",
+   "group": "베란다작물",
+   "category": "vegetable",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 20.6,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 7.8,
+     "S_light": 13.8,
+     "S_temp": 7.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 42.4,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 25.8,
+     "S_light": 50.0,
+     "S_temp": 25.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 45.2,
+     "S_light": 58.3,
+     "S_temp": 45.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 98.6,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 7
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 80.5,
+     "S_temp": 41.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 80.5,
+     "S_temp": 1.7,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 58.3,
+     "S_temp": 0.5,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 52.8,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 3,
+   "plant_ko": "부추",
+   "group": "베란다작물",
+   "category": "vegetable",
+   "first_good_month": null,
+   "good_months": [],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 3.0,
+     "S_light": 19.5,
+     "S_temp": 3.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 13.8,
+     "S_temp": 0.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 22.2,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 7.9,
+     "S_light": 50.0,
+     "S_temp": 7.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 21.8,
+     "S_light": 58.3,
+     "S_temp": 21.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 70.3,
+     "S_light": 80.5,
+     "S_temp": 70.3,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 16
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 80.5,
+     "S_temp": 41.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 80.5,
+     "S_temp": 1.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 58.3,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 52.8,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 4,
+   "plant_ko": "루꼴라",
+   "group": "베란다작물",
+   "category": "vegetable",
+   "first_good_month": "2026-04",
+   "good_months": [
+    4,
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 39.0,
+     "S_light": 39.0,
+     "S_temp": 62.6,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 27.7,
+     "S_light": 27.7,
+     "S_temp": 54.0,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 33.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 39.0,
+     "S_light": 39.0,
+     "S_temp": 60.1,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 50.4,
+     "S_light": 100.0,
+     "S_temp": 50.4,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-04",
+     "S_final": 85.3,
+     "S_light": 100.0,
+     "S_temp": 85.3,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-05",
+     "S_final": 92.8,
+     "S_light": 100.0,
+     "S_temp": 92.8,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 6
+    },
+    {
+     "month": "2026-06",
+     "S_final": 22.2,
+     "S_light": 100.0,
+     "S_temp": 22.2,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 0.0,
+     "S_light": 100.0,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.0,
+     "S_light": 100.0,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 27.4,
+     "S_light": 100.0,
+     "S_temp": 27.4,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 5,
+   "plant_ko": "쑥갓",
+   "group": "베란다작물",
+   "category": "vegetable",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 20.6,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 7.8,
+     "S_light": 13.8,
+     "S_temp": 7.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 42.4,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 25.8,
+     "S_light": 50.0,
+     "S_temp": 25.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 45.2,
+     "S_light": 58.3,
+     "S_temp": 45.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 98.6,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 7
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 80.5,
+     "S_temp": 41.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 80.5,
+     "S_temp": 1.7,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 58.3,
+     "S_temp": 0.5,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 52.8,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 6,
+   "plant_ko": "셀러리",
+   "group": "베란다작물",
+   "category": "vegetable",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 0.0,
+     "S_light": 19.5,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 13.8,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 9.8,
+     "S_light": 19.5,
+     "S_temp": 9.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 0.5,
+     "S_light": 50.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 9.1,
+     "S_light": 58.3,
+     "S_temp": 9.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 38.8,
+     "S_light": 80.5,
+     "S_temp": 38.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 87.3,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 68.5,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 7,
+   "plant_ko": "방울토마토",
+   "group": "베란다작물",
+   "category": "fruiting_vegetable",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5,
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 7.8,
+     "S_light": 19.5,
+     "S_temp": 7.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.3,
+     "S_light": 13.8,
+     "S_temp": 0.3,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 28.8,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 13.3,
+     "S_light": 50.0,
+     "S_temp": 13.3,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 29.8,
+     "S_light": 58.3,
+     "S_temp": 29.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 82.4,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 7
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 99.1,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 98.7,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 86.8,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 8,
+   "plant_ko": "고추",
+   "group": "베란다작물",
+   "category": "fruiting_vegetable",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 0.0,
+     "S_light": 19.5,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 13.8,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 9.8,
+     "S_light": 19.5,
+     "S_temp": 9.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 0.5,
+     "S_light": 50.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 9.1,
+     "S_light": 58.3,
+     "S_temp": 9.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 38.8,
+     "S_light": 80.5,
+     "S_temp": 38.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 99.6,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 100.0,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 94.0,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 9,
+   "plant_ko": "딸기",
+   "group": "베란다작물",
+   "category": "fruiting_vegetable",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5,
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 90.5,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 13.8,
+     "S_light": 13.8,
+     "S_temp": 61.6,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 81.7,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 50.0,
+     "S_light": 50.0,
+     "S_temp": 71.7,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-04",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 100.0,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-05",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 7
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 100.0,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 96.7,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "plant_id": 10,
+   "plant_ko": "오이",
+   "group": "베란다작물",
+   "category": "fruiting_vegetable",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 0.0,
+     "S_light": 19.5,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 13.8,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 9.8,
+     "S_light": 19.5,
+     "S_temp": 9.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 0.5,
+     "S_light": 50.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 9.1,
+     "S_light": 58.3,
+     "S_temp": 9.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 38.8,
+     "S_light": 80.5,
+     "S_temp": 38.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 87.3,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 68.5,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 11,
+   "plant_ko": "민트",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5,
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 20.6,
+     "S_light": 39.0,
+     "S_temp": 20.6,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 7.8,
+     "S_light": 27.7,
+     "S_temp": 7.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 33.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 39.0,
+     "S_light": 39.0,
+     "S_temp": 42.4,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 25.8,
+     "S_light": 100.0,
+     "S_temp": 25.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 45.2,
+     "S_light": 100.0,
+     "S_temp": 45.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 98.7,
+     "S_light": 100.0,
+     "S_temp": 98.7,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-06",
+     "S_final": 87.8,
+     "S_light": 100.0,
+     "S_temp": 87.8,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-07",
+     "S_final": 95.0,
+     "S_light": 100.0,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-08",
+     "S_final": 78.8,
+     "S_light": 100.0,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-09",
+     "S_final": 73.8,
+     "S_light": 100.0,
+     "S_temp": 73.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 3
+    }
+   ]
+  },
+  {
+   "plant_id": 12,
+   "plant_ko": "레몬밤",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 20.6,
+     "S_light": 39.0,
+     "S_temp": 20.6,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 7.8,
+     "S_light": 27.7,
+     "S_temp": 7.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 33.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 39.0,
+     "S_light": 39.0,
+     "S_temp": 42.4,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 25.8,
+     "S_light": 100.0,
+     "S_temp": 25.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 45.2,
+     "S_light": 100.0,
+     "S_temp": 45.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 98.7,
+     "S_light": 100.0,
+     "S_temp": 98.7,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-06",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-07",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-08",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-09",
+     "S_final": 99.3,
+     "S_light": 100.0,
+     "S_temp": 99.3,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "plant_id": 13,
+   "plant_ko": "파슬리",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 20.6,
+     "S_light": 39.0,
+     "S_temp": 20.6,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 7.8,
+     "S_light": 27.7,
+     "S_temp": 7.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 33.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 39.0,
+     "S_light": 39.0,
+     "S_temp": 42.4,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 25.8,
+     "S_light": 100.0,
+     "S_temp": 25.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 45.2,
+     "S_light": 100.0,
+     "S_temp": 45.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 98.6,
+     "S_light": 100.0,
+     "S_temp": 98.6,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 100.0,
+     "S_temp": 41.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 100.0,
+     "S_temp": 1.7,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 100.0,
+     "S_temp": 0.5,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 100.0,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 14,
+   "plant_ko": "바질",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 0.0,
+     "S_light": 19.5,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 13.8,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 5.7,
+     "S_light": 19.5,
+     "S_temp": 5.7,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 0.0,
+     "S_light": 50.0,
+     "S_temp": 0.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 4.2,
+     "S_light": 58.3,
+     "S_temp": 4.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 25.9,
+     "S_light": 80.5,
+     "S_temp": 25.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 93.9,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 100.0,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 88.8,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 15,
+   "plant_ko": "고수",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-09",
+   "good_months": [
+    9
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 3.0,
+     "S_light": 39.0,
+     "S_temp": 3.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 27.7,
+     "S_temp": 0.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 33.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 22.2,
+     "S_light": 39.0,
+     "S_temp": 22.2,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 7.9,
+     "S_light": 100.0,
+     "S_temp": 7.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 21.8,
+     "S_light": 100.0,
+     "S_temp": 21.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 70.4,
+     "S_light": 100.0,
+     "S_temp": 70.4,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 13
+    },
+    {
+     "month": "2026-06",
+     "S_final": 99.1,
+     "S_light": 100.0,
+     "S_temp": 99.1,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "제철 아님",
+     "limit": "없음",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 98.7,
+     "S_light": 100.0,
+     "S_temp": 98.7,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 86.8,
+     "S_light": 100.0,
+     "S_temp": 86.8,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "plant_id": 16,
+   "plant_ko": "딜",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5,
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 96.2,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 13.8,
+     "S_light": 13.8,
+     "S_temp": 67.9,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 1.8,
+     "S_light": 8.3,
+     "S_temp": 1.8,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 89.8,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 50.0,
+     "S_light": 50.0,
+     "S_temp": 80.4,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-04",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 100.0,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-05",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 7
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 94.7,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 92.1,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 80.6,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 17,
+   "plant_ko": "로즈마리",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": null,
+   "good_months": [],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 3.0,
+     "S_light": 19.5,
+     "S_temp": 3.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 13.8,
+     "S_temp": 0.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 22.2,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 7.9,
+     "S_light": 50.0,
+     "S_temp": 7.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 21.8,
+     "S_light": 58.3,
+     "S_temp": 21.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 70.4,
+     "S_light": 80.5,
+     "S_temp": 70.4,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 13
+    },
+    {
+     "month": "2026-06",
+     "S_final": 49.2,
+     "S_light": 80.5,
+     "S_temp": 49.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 16.7,
+     "S_light": 80.5,
+     "S_temp": 16.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 7.2,
+     "S_light": 58.3,
+     "S_temp": 7.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 50.7,
+     "S_light": 52.8,
+     "S_temp": 50.7,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 7
+    }
+   ]
+  },
+  {
+   "plant_id": 18,
+   "plant_ko": "라벤더",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": null,
+   "good_months": [],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 3.0,
+     "S_light": 19.5,
+     "S_temp": 3.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 0.0,
+     "S_light": 13.8,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 22.2,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 7.9,
+     "S_light": 50.0,
+     "S_temp": 7.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 21.8,
+     "S_light": 58.3,
+     "S_temp": 21.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 70.4,
+     "S_light": 80.5,
+     "S_temp": 70.4,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 13
+    },
+    {
+     "month": "2026-06",
+     "S_final": 49.2,
+     "S_light": 80.5,
+     "S_temp": 49.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 16.7,
+     "S_light": 80.5,
+     "S_temp": 16.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 7.2,
+     "S_light": 58.3,
+     "S_temp": 7.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 50.7,
+     "S_light": 52.8,
+     "S_temp": 50.7,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 19,
+   "plant_ko": "타임",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5,
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 20.6,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 7.8,
+     "S_light": 13.8,
+     "S_temp": 7.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 8.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 19.5,
+     "S_light": 19.5,
+     "S_temp": 42.4,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 25.8,
+     "S_light": 50.0,
+     "S_temp": 25.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 45.2,
+     "S_light": 58.3,
+     "S_temp": 45.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 98.7,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 7
+    },
+    {
+     "month": "2026-06",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 87.8,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-07",
+     "S_final": 80.5,
+     "S_light": 80.5,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-08",
+     "S_final": 58.3,
+     "S_light": 58.3,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 4
+    },
+    {
+     "month": "2026-09",
+     "S_final": 52.8,
+     "S_light": 52.8,
+     "S_temp": 73.8,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "plant_id": 20,
+   "plant_ko": "차이브",
+   "group": "베란다작물",
+   "category": "herb",
+   "first_good_month": "2026-05",
+   "good_months": [
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 36.8,
+     "S_light": 39.0,
+     "S_temp": 36.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 27.7,
+     "S_light": 27.7,
+     "S_temp": 28.3,
+     "grade": "부적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 0.0,
+     "S_light": 16.7,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 0.0,
+     "S_light": 33.3,
+     "S_temp": 0.0,
+     "grade": "제철 아님",
+     "limit": "온도",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 39.0,
+     "S_light": 39.0,
+     "S_temp": 52.7,
+     "grade": "제철 아님",
+     "limit": "광",
+     "in_season": false,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 35.1,
+     "S_light": 100.0,
+     "S_temp": 35.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 60.2,
+     "S_light": 100.0,
+     "S_temp": 60.2,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-05",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-06",
+     "S_final": 78.8,
+     "S_light": 100.0,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 11
+    },
+    {
+     "month": "2026-07",
+     "S_final": 76.7,
+     "S_light": 100.0,
+     "S_temp": 76.7,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 11
+    },
+    {
+     "month": "2026-08",
+     "S_final": 59.3,
+     "S_light": 100.0,
+     "S_temp": 59.3,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 3
+    },
+    {
+     "month": "2026-09",
+     "S_final": 68.1,
+     "S_light": 100.0,
+     "S_temp": 68.1,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 4
+    }
+   ]
+  },
+  {
+   "plant_id": 21,
+   "plant_ko": "금전수",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2025-10",
+   "good_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-11",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-12",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-01",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-02",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-03",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-04",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-05",
+     "S_final": 99.9,
+     "S_light": 100.0,
+     "S_temp": 99.9,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 100.0,
+     "S_temp": 41.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 100.0,
+     "S_temp": 1.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 100.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 100.0,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 22,
+   "plant_ko": "산세베리아",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 40.1,
+     "S_light": 100.0,
+     "S_temp": 40.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 47.2,
+     "S_light": 100.0,
+     "S_temp": 47.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 81.7,
+     "S_light": 100.0,
+     "S_temp": 81.7,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-07",
+     "S_final": 95.0,
+     "S_light": 100.0,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-08",
+     "S_final": 78.8,
+     "S_light": 100.0,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-09",
+     "S_final": 70.1,
+     "S_light": 100.0,
+     "S_temp": 70.1,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "plant_id": 23,
+   "plant_ko": "스킨답서스",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 40.1,
+     "S_light": 100.0,
+     "S_temp": 40.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 47.2,
+     "S_light": 100.0,
+     "S_temp": 47.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 81.7,
+     "S_light": 100.0,
+     "S_temp": 81.7,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-07",
+     "S_final": 95.0,
+     "S_light": 100.0,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-08",
+     "S_final": 78.8,
+     "S_light": 100.0,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-09",
+     "S_final": 70.1,
+     "S_light": 100.0,
+     "S_temp": 70.1,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "plant_id": 24,
+   "plant_ko": "몬스테라",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2025-10",
+   "good_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-11",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-12",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-01",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-02",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-03",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-04",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-05",
+     "S_final": 99.9,
+     "S_light": 100.0,
+     "S_temp": 99.9,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 100.0,
+     "S_temp": 41.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 100.0,
+     "S_temp": 1.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 100.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 100.0,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 25,
+   "plant_ko": "해피트리",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 40.1,
+     "S_light": 100.0,
+     "S_temp": 40.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 47.2,
+     "S_light": 100.0,
+     "S_temp": 47.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 81.7,
+     "S_light": 100.0,
+     "S_temp": 81.7,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-07",
+     "S_final": 95.0,
+     "S_light": 100.0,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-08",
+     "S_final": 78.8,
+     "S_light": 100.0,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-09",
+     "S_final": 70.1,
+     "S_light": 100.0,
+     "S_temp": 70.1,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "plant_id": 26,
+   "plant_ko": "벵갈고무나무",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2026-06",
+   "good_months": [
+    6,
+    7
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-11",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2025-12",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-01",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-02",
+     "S_final": 40.1,
+     "S_light": 100.0,
+     "S_temp": 40.1,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-03",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-04",
+     "S_final": 40.0,
+     "S_light": 100.0,
+     "S_temp": 40.0,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-05",
+     "S_final": 47.2,
+     "S_light": 100.0,
+     "S_temp": 47.2,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-06",
+     "S_final": 81.7,
+     "S_light": 100.0,
+     "S_temp": 81.7,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-07",
+     "S_final": 95.0,
+     "S_light": 100.0,
+     "S_temp": 95.0,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-08",
+     "S_final": 78.8,
+     "S_light": 100.0,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-09",
+     "S_final": 70.1,
+     "S_light": 100.0,
+     "S_temp": 70.1,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "plant_id": 27,
+   "plant_ko": "아이비",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2025-10",
+   "good_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-11",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-12",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-01",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-02",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-03",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-04",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-05",
+     "S_final": 99.9,
+     "S_light": 100.0,
+     "S_temp": 99.9,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 100.0,
+     "S_temp": 41.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 100.0,
+     "S_temp": 1.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 100.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 100.0,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 28,
+   "plant_ko": "홍콩야자",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2025-10",
+   "good_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-11",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-12",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-01",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-02",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-03",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-04",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-05",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-06",
+     "S_final": 78.8,
+     "S_light": 100.0,
+     "S_temp": 78.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 5
+    },
+    {
+     "month": "2026-07",
+     "S_final": 76.7,
+     "S_light": 100.0,
+     "S_temp": 76.7,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 5
+    },
+    {
+     "month": "2026-08",
+     "S_final": 59.3,
+     "S_light": 100.0,
+     "S_temp": 59.3,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 5
+    },
+    {
+     "month": "2026-09",
+     "S_final": 72.8,
+     "S_light": 100.0,
+     "S_temp": 72.8,
+     "grade": "보통",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "plant_id": 29,
+   "plant_ko": "관음죽",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2025-10",
+   "good_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-11",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-12",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-01",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-02",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-03",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-04",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-05",
+     "S_final": 99.9,
+     "S_light": 100.0,
+     "S_temp": 99.9,
+     "grade": "적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": 2
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 100.0,
+     "S_temp": 41.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 100.0,
+     "S_temp": 1.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 100.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 100.0,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  },
+  {
+   "plant_id": 30,
+   "plant_ko": "골드크레스트 '윌마'",
+   "group": "실내식물",
+   "category": "indoor_plant",
+   "first_good_month": "2025-10",
+   "good_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "monthly": [
+    {
+     "month": "2025-10",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-11",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2025-12",
+     "S_final": 98.5,
+     "S_light": 98.5,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "광",
+     "in_season": true,
+     "rank": 6
+    },
+    {
+     "month": "2026-01",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-02",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-03",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-04",
+     "S_final": 100.0,
+     "S_light": 100.0,
+     "S_temp": 100.0,
+     "grade": "적합",
+     "limit": "없음",
+     "in_season": true,
+     "rank": 1
+    },
+    {
+     "month": "2026-05",
+     "S_final": 79.3,
+     "S_light": 79.3,
+     "S_temp": 99.9,
+     "grade": "보통",
+     "limit": "광",
+     "in_season": true,
+     "rank": 6
+    },
+    {
+     "month": "2026-06",
+     "S_final": 41.8,
+     "S_light": 87.5,
+     "S_temp": 41.8,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-07",
+     "S_final": 1.7,
+     "S_light": 74.9,
+     "S_temp": 1.7,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-08",
+     "S_final": 0.5,
+     "S_light": 100.0,
+     "S_temp": 0.5,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    },
+    {
+     "month": "2026-09",
+     "S_final": 43.9,
+     "S_light": 100.0,
+     "S_temp": 43.9,
+     "grade": "부적합",
+     "limit": "온도",
+     "in_season": true,
+     "rank": null
+    }
+   ]
+  }
+ ],
+ "meta": {
+  "recommend": "2026-11-13",
+  "rules": {
+   "S_final": "min(S_light, S_temp)",
+   "top3": "제철 & S_final>=50, 3종보다 적을 수 있음",
+   "temp": "21일 ASOS 매시 기온 사다리꼴(범위 밖 5℃에서 0점)",
+   "indoor_temp": "실내식물은 외기를 18~28℃로 제한",
+   "grade": "80 이상 적합, 50 이상 보통, 그 미만 부적합",
+   "indoor_light": "실내 1m 낮 평균 lux / 필요 lux"
+  }
+ }
+}
