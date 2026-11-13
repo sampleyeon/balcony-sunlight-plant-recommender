@@ -2,7 +2,8 @@
 """
 적합도 객관 검증 (실측·사람 평가 없이 계산값과 공개 기준만 사용)
 
-V1 규칙 점검     : 점수 범위, min 규칙, 계절 필터, direct_h 단조성, 시나리오 논리(A·B ≥ C)
+V1 규칙 점검     : 점수 범위, min 규칙, 계절 필터, direct_h 단조성, S_light 입력 일관성
+                   (시나리오 간 일조 크기 순서는 검사하지 않고 결과 설명에서 방향·층수로 해석)
 V2 21일 대표성   : 21일 하루 기온 vs 그 달 전체 기온으로 S_temp 를 계산해 비교
 V3 일조 민감도   : direct_h ±10분, ±30분 (10분 간격 계산·DSM 오차 범위)
 V4 온도 민감도   : 적정 범위 ±1℃
@@ -12,7 +13,7 @@ V6 재배달력 대조 : 작물별 파종·정식 적기(중부지방, 초안) �
 """
 import numpy as np
 import pandas as pd
-from plant_suitability import load, score, OUT, GOOD, FAIR
+from plant_suitability import load, score, indoor_lux_table, OUT, GOOD, FAIR
 
 # 중부지방 가정 텃밭 파종·정식 적기 (검증 기준 초안. 농사로 작목별 재배력으로 대조해 확정 필요)
 CALENDAR = {
@@ -65,8 +66,20 @@ def main():
     mm = base.merge(up, on=["scenario", "month", "plant_id"], suffixes=("", "_up"))
     out = mm["category"] != "indoor_plant"
     chk["direct_h 늘면 S_light 감소 없음"] = bool((mm.loc[out, "S_light_up"] >= mm.loc[out, "S_light"]).all())
-    piv = base[base["category"] != "indoor_plant"].pivot_table(index=["month", "plant_id"], columns="scenario", values="S_light")
-    chk["옥외작물 S_light: A ≥ B, C (모든 월, 고층 A가 가장 밝음)"] = bool(((piv["A"] >= piv["B"]) & (piv["A"] >= piv["C"])).all())
+    # S_light 입력 일관성: 엔진 점수가 입력값(직사 시간, 실내 조도)을 규칙대로 옮겼는지 다시 계산해 대조
+    pl = plants.set_index("plant_id")
+    dh = {(r.scenario, r.month): r.direct_h for r in env.itertuples()}
+    lx = {(r.scenario, r.month): r.lux_mean for r in indoor_lux_table(env, w).itertuples()}
+    def expect_light(r):
+        p = pl.loc[r["plant_id"]]
+        if r["category"] == "indoor_plant":
+            v = lx.get((r["scenario"], r["month"]), np.nan)
+            return round(min(v / p["recommended_light_min_lux"], 1) * 100, 1) if pd.notna(v) else np.nan
+        return round(min(dh[(r["scenario"], r["month"])] / p["minimum_sunlight_hours"], 1) * 100, 1)
+    exp = base.apply(expect_light, axis=1)
+    both = exp.notna() & base["S_light"].notna()
+    chk["옥외작물·실내식물 S_light = 입력(직사 시간·실내 조도) 규칙대로 계산됨"] = bool(
+        np.allclose(base.loc[both, "S_light"], exp[both]) and (exp.isna() == base["S_light"].isna()).all())
     lines.append("[V1 규칙 점검]")
     lines += [f"  {'통과' if ok else '실패'}  {k}" for k, ok in chk.items()]
     miss = sorted(base.loc[base["S_final"].isna(), "month"].unique())

@@ -4,9 +4,12 @@
 
 엔진 규칙 (유민 '7. 추천엔진정리' 2026-10-26 기준)
   S_sun  = min(direct_h / minimum_sunlight_hours, 1) x 100   (매월 21일, 10분 간격 직사광 시간)
-  S_temp = 21일 ASOS 매시 기온 24개 중 작물 적정 범위 안에 든 비율 x 100
+  S_temp = 21일 ASOS 매시 기온 24개를 사다리꼴로 점수화한 평균 x 100  (2026-11-13 변경)
+           시간마다 적정 범위 안이면 1, 범위 밖이면 5℃ 벗어날 때까지 직선으로 줄어 0
   계절   = 기상청 계절(3~5 봄, 6~8 여름, 9~11 가을, 12~2 겨울)이 sowing_growing_season 에 없으면 제외
   S_final = min(S_sun, S_temp)   (제한요인 원리)
+  Top3 후보 = 제철이고 S_final >= 50(보통 이상)인 작물만  (2026-11-13 변경)
+           0점·부적합 작물은 순위에 나오지 않으므로 달에 따라 3종보다 적을 수 있음
   동점은 같은 순위
   순위는 베란다작물 20종 / 실내식물 10종을 따로 매김 (광 기준이 달라 한 줄로 비교 불가)
 
@@ -34,6 +37,7 @@ GOOD, FAIR = 80, 50            # 등급 경계: 80 이상 적합, 50 이상 보�
 LM_PER_W = 110                 # 일사 → 조도 환산 (주광 발광효율, 임시)
 DF_DIFFUSE, DF_DIRECT = 0.05, 0.30   # 창가 1m 확산/직사 투과 비율 (임시)
 INDOOR_T = (18, 28)            # 실내 기온 가정 범위
+TEMP_MARGIN = 5.0              # S_temp 사다리꼴: 적정 범위 밖 이 온도(℃)만큼 벗어나면 0점
 SEASON = {3: "spring", 4: "spring", 5: "spring", 6: "summer", 7: "summer", 8: "summer",
           9: "fall", 10: "fall", 11: "fall", 12: "winter", 1: "winter", 2: "winter"}
 
@@ -48,12 +52,15 @@ def load():
     return plants, env, w
 
 
-def temp_share(temps, lo, hi):
-    """기온 배열 중 [lo, hi] 안에 든 비율 x100. 자료가 없으면 NaN."""
+def temp_share(temps, lo, hi, margin=TEMP_MARGIN):
+    """매시 기온 사다리꼴 점수의 평균 x100. 자료가 없으면 NaN.
+    한 시간 점수: lo~hi 안이면 1, 밖이면 벗어난 정도(gap)에 따라 1 - gap/margin (0 아래는 0)."""
     temps = np.asarray(temps, float)
     if temps.size == 0:
         return np.nan
-    return float(((temps >= lo) & (temps <= hi)).mean() * 100)
+    gap = np.maximum(lo - temps, 0) + np.maximum(temps - hi, 0)   # 범위 안이면 0
+    hourly = np.clip(1 - gap / margin, 0, 1)
+    return float(hourly.mean() * 100)
 
 
 def indoor_lux_table(env, w):
@@ -124,7 +131,8 @@ def score(plants, env, w, day_sel=None, dh_shift=0.0, t_shift=0.0, lux=None):
             })
     df = pd.DataFrame(rows)
     df["eligible"] = df["in_season"] & df["S_final"].notna()
-    df["rank"] = (df[df["eligible"]].groupby(["scenario", "month", "group"])["S_final"]
+    df["recommendable"] = df["eligible"] & (df["S_final"] >= FAIR)   # Top3 후보: 보통(50) 이상만
+    df["rank"] = (df[df["recommendable"]].groupby(["scenario", "month", "group"])["S_final"]
                   .rank(method="min", ascending=False))
     df["grade"] = np.select([df["S_final"] >= GOOD, df["S_final"] >= FAIR],
                             ["적합", "보통"], "부적합")
